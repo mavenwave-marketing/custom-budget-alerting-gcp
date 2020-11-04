@@ -1,0 +1,8 @@
+resource "google_storage_bucket" "budget_alerts_code_bucket" {
+  name               = var.budget_alerts_code_bucket_name
+  project            = var.project_id
+
+  versioning {
+    enabled = true
+  }
+}
